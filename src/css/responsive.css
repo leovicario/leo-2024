@@ -1,0 +1,40 @@
+	html {
+		font-size: 0.85vw;  
+  	}
+  
+    @media (min-width: 1200px ) {
+      html, body {
+      font-size: 0.85vw;  }
+  }
+  
+	@media screen and (max-width: 800px ) {
+  		html {
+    		font-size: 2vw;
+      }
+  	}
+      
+    @media screen and (max-width: 600px ) {
+  		html {
+    		font-size: 4vw;
+  	}
+}
+
+html.lenis {
+	height: auto;
+  }
+  
+  .lenis.lenis-smooth {
+	scroll-behavior: auto !important;
+  }
+  
+  .lenis.lenis-smooth [data-lenis-prevent] {
+	overscroll-behavior: contain;
+  }
+  
+  .lenis.lenis-stopped {
+	overflow: hidden;
+  }
+  
+  .lenis.lenis-scrolling iframe {
+	pointer-events: none;
+  }

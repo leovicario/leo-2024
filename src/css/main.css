@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Aesthetic";
+  src: '/type/Aesthetic/AestheticRegular.ttf'
+  }
+
+
+  @font-face {
+    font-family: 'Neue';
+    src: url('/type/neuegrotesk/NeueHaasDisplay-XXThin.woff2');
+    font-weight: 100; 
+  }
+  
+  @font-face {
+    font-family: 'Neue';
+    src: url('/type/neuegrotesk/NeueHaasDisplay-XThin.woff2');
+    font-weight: 200;
+  }
+  
+  @font-face {
+    font-family: 'Neue';
+    src: url('/type/neuegrotesk/NeueHaasDisplay-Thin.woff2');
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: 'Neue';
+    src: url('/type/neuegrotesk/NeueHaasDisplay-Roman.woff2');
+    font-weight: 400;  
+  }
+  
+  @font-face {
+    font-family: 'Neue';
+    src: url('/type/neuegrotesk/NeueHaasDisplay-Mediu.woff2');
+    font-weight: 500; 
+  }
+  
+  @font-face {
+    font-family: 'Neue';
+    src: url('/type/neuegrotesk/NeueHaasDisplay-Bold.woff2');
+    font-weight: 700;
+  }
+  
+  @font-face {
+    font-family: 'Neue';
+    src: url('/type/neuegrotesk/NeueHaasDisplay-Black.woff2');
+    font-weight: 900; 
+  }
+
+  @font-face {
+    font-family: 'Neue';
+    src: url('/type/neuegrotesk/NeueHaasDisplay-XXThinItalic.woff2');
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Neue';
+    src: url('/type/neuegrotesk/NeueHaasDisplay-XThinItalic.woff2');
+    font-weight: 200;
+    font-style: italic; 
+  }
+  
+  @font-face {
+    font-family: 'Neue';
+    src: url('/type/neuegrotesk/NeueHaasDisplay-ThinItalic.woff2');
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Neue'; 
+    src: url('/type/neuegrotesk/NeueHaasDisplay-LightItalic.woff2');
+    font-weight: 350;
+    font-style: italic;   
+  }
+  
+  @font-face {
+    font-family: 'Neue';
+    src: url('/type/neuegrotesk/NeueHaasDisplay-RomanItalic.woff2');
+    font-weight: 400;
+    font-style: italic; 
+  }
+  
+  @font-face {
+    font-family: 'Neue';
+    src: url('/type/neuegrotesk/NeueHaasDisplay-MediuItalic.woff2'); 
+    font-weight: 500;
+    font-style: italic;  
+  }
+  
+  @font-face {
+    font-family: 'Neue';
+    src: url('/type/neuegrotesk/NeueHaasDisplay-BoldItalic.woff2');
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Neue';
+    src: url('/type/neuegrotesk/NeueHaasDisplay-BlackItalic.woff2');
+    font-weight: 900; 
+    font-style: italic; 
+  }
+
+:root {
+  --primary-color: #C00E28;
+  --text-color: #FCE1BE;
+  --bg-color: #040404;
+
+  /* font-family: 'Neue Haas Grotesk', system-ui, Inter, Helvetica, Arial, sans-serif; */
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  font-family: 'Neue';
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+}
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+  position: fixed;
+  background-color: transparent !important;
+  top: 0;
+  left: 0;
+}
+
+a {
+  text-decoration: no-decoration;
+}
+
+main {
+  /* pointer-events: none; */
+  z-index: 1;
+  width: 100%;
+}
+
+root::-webkit-scrollbar {
+  display: none !important;
+  
+}
+
+body {
+
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#hero-title {
+  
+  font-size: 12rem;
+  line-height: 90%;
+  font-family: 'Aesthetic';
+  text-transform: uppercase;
+  letter-spacing: -0.5rem;
+ 
+}
+
+#special-title {
+  font-family: 'Neue';
+  line-height: 80%;
+  text-transform: uppercase;
+  letter-spacing: -1rem;
+  font-weight: 100;
+  font-size: 13rem;
+  letter-spacing: -0.1rem;
+  font-style: italic;
+}
+
+#text-full {
+  font-family: 'Aesthetic';
+  text-align: center;
+  font-size: 24rem;
+  letter-spacing: -0.8rem;
+  text-align: left;
+  text-transform: uppercase;
+}
